@@ -6,7 +6,9 @@
 
 [Schematics](https://qeteshpony.github.io/FloaltController/)
 
-A custom, ESP32 based controller for the 30 x 90 cm IKEA FLOALT LED light panel. I created this since my original controller got fried by a thunderstorm and IKEA does not sell these anymore in Europe. 
+A custom, ESP32 based controller for the 30 x 90 cm IKEA FLOALT LED light panel. This probably works with other sizes of the panel as well but i can't test this since I don't own any of them. 
+
+I created this since my original controller got fried by a thunderstorm and IKEA does not sell these anymore in Europe. 
 
 As a side effect this allows way better control over the panel than the original controller which kept the light very bright even at lowest settings. The board is created with KiCad 7 and with production and assembly by JLCPCB in mind. Some components have to be purchased elsewhere and manually soldered. 
 
