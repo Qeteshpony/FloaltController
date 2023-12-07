@@ -1,0 +1,31 @@
+status_led:
+  pin: 
+    number: GPIO14
+    inverted: False
+
+output:
+  - platform: ledc
+    pin: GPIO27
+    id: output_cw
+    max_power: 1.0
+    frequency: 19531
+  - platform: ledc
+    pin: GPIO17
+    id: output_ww
+    max_power: 1.0
+    frequency: 19531
+
+
+light:
+  - platform: cwww
+    name: "Light"
+    id: floalt
+    icon: mdi:rectangle-outline
+    cold_white: output_cw
+    warm_white: output_ww
+    cold_white_color_temperature: 4000 K
+    warm_white_color_temperature: 2200 K
+    constant_brightness: True
+    default_transition_length: 1.0s
+    restore_mode: RESTORE_AND_OFF
+    gamma_correct: 1.0
